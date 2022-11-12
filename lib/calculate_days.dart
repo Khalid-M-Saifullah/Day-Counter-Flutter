@@ -18,9 +18,9 @@ class CalculateDays {
     totalDays = totalDays.abs();
 
     int x = totalDays;
-    y = (x/365).round();
+    y = (x/365).floor();
     x = x%365;
-    m = (x/30).round();
+    m = (x/30).floor();
     d = x%30;
 
     return totalDays.toString();
